@@ -240,3 +240,6 @@
 [2024-07-15T10:54:15.518] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-15T11:14:37.726] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:50948/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-15T11:14:58.833] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:50948/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-15T11:17:37.668] [INFO] server - Server running on http://localhost:3000
+[2024-07-15T11:17:37.734] [INFO] db - Connected to MySQL database
+[2024-07-15T11:18:41.016] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
