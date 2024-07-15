@@ -4,7 +4,14 @@
   </div>
   <div class="content">
     <div class="left-panel">
-      <button mat-raised-button>Basic</button>
+      <button
+        class="but"
+        mat-raised-button
+        color="primary"
+        (click)="openAddlistDialog()"
+      >
+        Add
+      </button>
       <mat-list>
         <mat-list-item *ngFor="let project of projects">
           <button mat-button (click)="handleProjectClick(project)">
@@ -18,12 +25,10 @@
         <h2>{{ selectedProject.projectlist }}</h2>
         <form (submit)="onFileUpload($event)">
           <input type="file" (change)="onFileSelected($event)" />
-          <button type="submit" mat-raised-button color="primary">
-            Upload
-          </button>
+          <button type="submit" mat-raised-button color="primary">Upload</button>
         </form>
       </div>
-      <div *ngIf="!selectedProject">
+      <div *ngIf="!selectedProject" class="centered-message">
         <p>Select a project to view details and upload files.</p>
       </div>
     </div>
@@ -31,7 +36,8 @@
   <div class="footer"></div>
 </div> -->
 
-<!-- <div class="app-container">
+<!-- 
+<div class="app-container">
   <div class="header">
     <h1>Project Portfolio</h1>
   </div>
@@ -57,7 +63,7 @@
       <div *ngIf="selectedProject">
         <h2>{{ selectedProject.projectlist }}</h2>
         <form (submit)="onFileUpload($event)">
-          <input type="file" (change)="onFileSelected($event)" />
+          <input type="file" (change)="onFileSelect($event)" />
           <button type="submit" mat-raised-button color="primary">
             Upload
           </button>
@@ -68,7 +74,9 @@
       </div>
     </div>
   </div>
-  <div class="footer"></div>
+  <div class="footer">
+    <p>&copy; 2024 Project Portfolio</p>
+  </div>
 </div> -->
 
 <div class="app-container">
@@ -87,14 +95,7 @@
       </button>
       <mat-list>
         <mat-list-item *ngFor="let project of projects">
-          <button
-            mat-button
-            [ngClass]="{
-              'selected-button': selectedProject?.id === project.id
-            }"
-            (click)="handleProjectClick(project)"
-            class="mat-list-item-button"
-          >
+          <button mat-button (click)="handleProjectClick(project)">
             {{ project.projectlist }}
           </button>
         </mat-list-item>
@@ -103,8 +104,9 @@
     <div class="right-panel">
       <div *ngIf="selectedProject">
         <h2>{{ selectedProject.projectlist }}</h2>
+        <!-- <p>Select a project to view details and upload files.</p> -->
         <form (submit)="onFileUpload($event)">
-          <input type="file" (change)="onFileSelected($event)" />
+          <input type="file" (change)="onFileSelect($event)" />
           <button type="submit" mat-raised-button color="primary">
             Upload
           </button>
@@ -115,5 +117,7 @@
       </div>
     </div>
   </div>
-  <div class="footer"></div>
+  <div class="footer">
+    <p>&copy; 2024 Project Portfolio</p>
+  </div>
 </div>
