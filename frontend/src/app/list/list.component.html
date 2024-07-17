@@ -91,7 +91,7 @@
         color="primary"
         (click)="openAddlistDialog()"
       >
-        Add
+        Add Projects
       </button>
       <mat-list>
         <mat-list-item *ngFor="let project of projects">
@@ -103,14 +103,21 @@
     </div>
     <div class="right-panel">
       <div *ngIf="selectedProject">
-        <h2>{{ selectedProject.projectlist }}</h2>
-        <!-- <p>Select a project to view details and upload files.</p> -->
+        <h1 class="title">{{ selectedProject.projectlist }}</h1>
         <form (submit)="onFileUpload($event)">
           <input type="file" (change)="onFileSelect($event)" />
           <button type="submit" mat-raised-button color="primary">
             Upload
           </button>
         </form>
+        <button
+          type="submit"
+          mat-raised-button
+          color="primary"
+          (click)="videos()"
+        >
+          Videos
+        </button>
       </div>
       <div *ngIf="!selectedProject" class="centered-message">
         <p>Select a project to view details and upload files.</p>

@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddlistDialogComponent } from './addlist-dialog/addlist-dialog.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     AddlistComponent,
-    AddlistDialogComponent
+    AddlistDialogComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,

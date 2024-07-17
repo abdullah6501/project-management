@@ -1,0 +1,57 @@
+<div class="app-container">
+  <div class="header">
+    <h1>Project Portfolio - {{ projectName }}</h1>
+  </div>
+  <div class="content">
+    <div class="left-panel">
+      <h2>Uploaded Files:</h2>
+      <ul>
+        <li *ngFor="let file of projectFiles">
+          <a [href]="file.file_url" download="{{ file.file_name }}">
+            <img
+              [src]="file.file_url"
+              alt="{{ file.file_name }}"
+              class="thumbnail"
+            />
+          </a>
+          <p>{{ file.file_name }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Project Portfolio</p>
+  </div>
+</div>
+
+<!-- <div class="app-container">
+  <div class="header">
+    <h1>Project Portfolio - {{ projectName }}</h1>
+  </div>
+  <div class="content">
+    <div class="left-panel">
+      <h2>Uploaded Files:</h2>
+      <ul>
+        <li *ngFor="let file of projectFiles">
+          <img
+            [src]="file.file_url"
+            alt="{{ file.file_name }}"
+            class="thumbnail"
+            (click)="playVideo(file.file_url)"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="right-panel" *ngIf="selectedFileUrl">
+      <video
+        controls
+        autoplay
+        [src]="selectedFileUrl"
+        class="video-player"
+      ></video>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Project Portfolio</p>
+  </div>
+</div> -->
