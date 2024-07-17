@@ -33,6 +33,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("/assets/bg1.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .centered-message {
@@ -43,6 +47,16 @@
 
 .title {
   color: #3f69d3;
+  font-size: 40px;
+  position: relative;
+  bottom: 230px;
+  right: 200px;
+}
+
+.videos {
+  position: relative;
+  bottom: 310px;
+  left: 300px;
 }
 
 /* Desktop view */

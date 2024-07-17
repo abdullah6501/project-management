@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AddlistDialogComponent } from '../addlist-dialog/addlist-dialog.component';
 import { environment } from 'src/environment/environment';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 interface Project {
   id: number;
@@ -21,7 +22,7 @@ export class ListComponent implements OnInit {
   selectedProject: Project | null = null;
   public apiUrl = environment.PORTFOLIO_BASEURL;
 
-  constructor(public dialog: MatDialog, private http: HttpClient, private router: Router) { }
+  constructor(public dialog: MatDialog, private snackBar: MatSnackBar, private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
     this.fetchProjects();
@@ -80,9 +81,19 @@ export class ListComponent implements OnInit {
     this.http.post(url, formData, { headers }).subscribe({
       next: (response) => {
         console.log('File uploaded successfully', response);
+        this.snackBar.open('File added successfully!', 'Close', {
+          duration: 3000,
+          verticalPosition: 'bottom',
+          horizontalPosition: 'right'
+        });
       },
       error: (error) => {
         console.error('Error uploading file:', error);
+        this.snackBar.open('Failed to upload file.', 'Close', {
+          duration: 3000,
+          verticalPosition: 'bottom',
+          horizontalPosition: 'right'
+        });
       }
     });
   }

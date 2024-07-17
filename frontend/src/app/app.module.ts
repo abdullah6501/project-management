@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddlistDialogComponent } from './addlist-dialog/addlist-dialog.component';
 import { VideosComponent } from './videos/videos.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,11 @@ import { VideosComponent } from './videos/videos.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right',
+      timeOut: 3000
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
