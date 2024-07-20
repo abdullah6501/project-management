@@ -172,7 +172,7 @@
   align-items: center;
   width: calc(
     100% / 3 - 10px
-  ); /* Adjust based on the number of tiles per row */
+  ); 
   background: #f8f8f8;
   padding: 10px;
   border: 1px solid #ddd;

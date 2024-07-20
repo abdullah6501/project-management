@@ -10,7 +10,7 @@
         color="primary"
         (click)="openAddlistDialog()"
       >
-        Add
+        Add Projects
       </button>
       <mat-list>
         <mat-list-item *ngFor="let project of projects">
@@ -21,53 +21,78 @@
       </mat-list>
     </div>
     <div class="right-panel">
-      <div *ngIf="selectedProject">
-        <h2>{{ selectedProject.projectlist }}</h2>
-        <form (submit)="onFileUpload($event)">
-          <input type="file" (change)="onFileSelected($event)" />
-          <button type="submit" mat-raised-button color="primary">Upload</button>
-        </form>
-      </div>
-      <div *ngIf="!selectedProject" class="centered-message">
-        <p>Select a project to view details and upload files.</p>
-      </div>
-    </div>
-  </div>
-  <div class="footer"></div>
-</div> -->
-
-<!-- 
-<div class="app-container">
-  <div class="header">
-    <h1>Project Portfolio</h1>
-  </div>
-  <div class="content">
-    <div class="left-panel">
-      <button
-        class="but"
-        mat-raised-button
-        color="primary"
-        (click)="openAddlistDialog()"
-      >
-        Add
-      </button>
-      <mat-list>
-        <mat-list-item *ngFor="let project of projects">
-          <button mat-button (click)="handleProjectClick(project)">
-            {{ project.projectlist }}
-          </button>
-        </mat-list-item>
-      </mat-list>
-    </div>
-    <div class="right-panel">
-      <div *ngIf="selectedProject">
-        <h2>{{ selectedProject.projectlist }}</h2>
-        <form (submit)="onFileUpload($event)">
+      <div class="full" *ngIf="selectedProject">
+        <h1 class="title">{{ selectedProject.projectlist }}</h1>
+        <form class="upload" (submit)="onFileUpload($event)">
           <input type="file" (change)="onFileSelect($event)" />
           <button type="submit" mat-raised-button color="primary">
             Upload
           </button>
         </form>
+
+        <div class="file-sections">
+          <div *ngIf="projectFiles.videos.length > 0">
+            <h3>Videos</h3>
+            <ul>
+              <li *ngFor="let file of projectFiles.videos">
+                <video
+                  [src]="file.file_url"
+                  class="video-thumbnail"
+                  controls
+                ></video>
+                <p>{{ file.file_name }}</p>
+              </li>
+            </ul>
+          </div>
+
+          <div *ngIf="projectFiles.ppts.length > 0">
+            <h3>PPTs</h3>
+            <ul>
+              <li *ngFor="let file of projectFiles.ppts">
+                <a [href]="file.file_url" download="{{ file.file_name }}">
+                  <img
+                    src="assets/ppt-icon.png"
+                    alt="{{ file.file_name }}"
+                    class="thumbnail"
+                  />
+                </a>
+                <p>{{ file.file_name }}</p>
+              </li>
+            </ul>
+          </div>
+
+          <div *ngIf="projectFiles.docs.length > 0">
+            <h3>Documents</h3>
+            <ul>
+              <li *ngFor="let file of projectFiles.docs">
+                <a [href]="file.file_url" download="{{ file.file_name }}">
+                  <img
+                    src="assets/doc-icon.png"
+                    alt="{{ file.file_name }}"
+                    class="thumbnail"
+                  />
+                </a>
+                <p>{{ file.file_name }}</p>
+              </li>
+            </ul>
+          </div>
+
+          <div *ngIf="projectFiles.misc.length > 0">
+            <h3>Miscellaneous</h3>
+            <ul>
+              <li *ngFor="let file of projectFiles.misc">
+                <a [href]="file.file_url" download="{{ file.file_name }}">
+                  <img
+                    src="assets/file-icon.png"
+                    alt="{{ file.file_name }}"
+                    class="thumbnail"
+                  />
+                </a>
+                <p>{{ file.file_name }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div *ngIf="!selectedProject" class="centered-message">
         <p>Select a project to view details and upload files.</p>
@@ -79,7 +104,7 @@
   </div>
 </div> -->
 
-<div class="app-container">
+<!-- <div class="app-container">
   <div class="header">
     <h1>Project Portfolio</h1>
   </div>
@@ -102,23 +127,156 @@
       </mat-list>
     </div>
     <div class="right-panel">
-      <div *ngIf="selectedProject">
-        <h1 class="title">{{ selectedProject.projectlist }}</h1>
-        <form (submit)="onFileUpload($event)">
+      <div class="header-container">
+        <h1 class="title">{{ selectedProject?.projectlist }}</h1>
+        <form class="upload" (submit)="onFileUpload($event)">
           <input type="file" (change)="onFileSelect($event)" />
           <button type="submit" mat-raised-button color="primary">
             Upload
           </button>
         </form>
-        <button
-          type="submit"
-          mat-raised-button
-          color="primary"
-          (click)="videos()"
-          class="videos"
-        >
-          Videos
-        </button>
+      </div>
+
+      <div *ngIf="selectedProject" class="file-sections">
+        <div class="file-section">
+          <h3>Videos</h3>
+          <form class="upload-form" (submit)="onFileUpload($event)">
+            <input type="file" (change)="onFileSelect($event)" />
+            <button type="submit" mat-raised-button color="primary">
+              Upload
+            </button>
+          </form>
+          <ul>
+            <li *ngFor="let file of projectFiles.videos">
+              <video
+                [src]="file.file_url"
+                class="video-thumbnail"
+                controls
+              ></video>
+              <p>{{ file.file_name }}</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="file-section">
+          <h3>PPTs</h3>
+          <form class="upload-form" (submit)="onFileUpload($event)">
+            <input type="file" (change)="onFileSelect($event)" />
+            <button type="submit" mat-raised-button color="primary">
+              Upload
+            </button>
+          </form>
+          <ul>
+            <li *ngFor="let file of projectFiles.ppts">
+              <a [href]="file.file_url" download="{{ file.file_name }}">
+                <img
+                  src="assets/ppt-icon.png"
+                  alt="{{ file.file_name }}"
+                  class="thumbnail"
+                />
+              </a>
+              <p>{{ file.file_name }}</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="file-section">
+          <h3>Documents</h3>
+          <form class="upload-form" (submit)="onFileUpload($event)">
+            <input type="file" (change)="onFileSelect($event)" />
+            <button type="submit" mat-raised-button color="primary">
+              Upload
+            </button>
+          </form>
+          <ul>
+            <li *ngFor="let file of projectFiles.docs">
+              <a [href]="file.file_url" download="{{ file.file_name }}">
+                <img
+                  src="assets/doc-icon.png"
+                  alt="{{ file.file_name }}"
+                  class="thumbnail"
+                />
+              </a>
+              <p>{{ file.file_name }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div *ngIf="!selectedProject" class="centered-message">
+        <p>Select a project to view details and upload files.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Project Portfolio</p>
+  </div>
+</div> -->
+
+
+<div class="app-container">
+  <div class="header">
+    <h1>Project Portfolio</h1>
+  </div>
+  <div class="content">
+    <div class="left-panel">
+      <button class="but" mat-raised-button color="primary" (click)="openAddlistDialog()">Add Projects</button>
+      <mat-list>
+        <mat-list-item *ngFor="let project of projects">
+          <button mat-button (click)="handleProjectClick(project)">
+            {{ project.projectlist }}
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="right-panel">
+      <div class="upload-container">
+        <div class="upload-section">
+          <h3>Videos</h3>
+          <input type="file" (change)="onFileSelect($event, 'videos')" />
+        </div>
+        <div class="upload-section">
+          <h3>Documents</h3>
+          <input type="file" (change)="onFileSelect($event, 'docs')" />
+        </div>
+        <div class="upload-section">
+          <h3>Miscellaneous</h3>
+          <input type="file" (change)="onFileSelect($event, 'misc')" />
+        </div>
+        <button class="upload-button" mat-raised-button color="primary" (click)="onUploadAll()">Upload</button>
+      </div>
+      <div *ngIf="selectedProject" class="file-lists">
+        <div class="file-list-section">
+          <h3>Video List</h3>
+          <ul>
+            <li *ngFor="let file of projectFiles.videos">
+              <video [src]="file.file_url" class="video-thumbnail" controls></video>
+              <p>{{ file.file_name }}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="file-list-section">
+          <h3>Document List</h3>
+          <ul>
+            <li *ngFor="let file of projectFiles.docs">
+              <a [href]="file.file_url" download="{{ file.file_name }}">
+                <img src="assets/doc-icon.png" alt="{{ file.file_name }}" class="thumbnail" />
+              </a>
+              <p>{{ file.file_name }}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="file-list-section">
+          <h3>Other Files</h3>
+          <ul>
+            <li *ngFor="let file of projectFiles.misc">
+              <a [href]="file.file_url" download="{{ file.file_name }}">
+                <img src="assets/file-icon.png" alt="{{ file.file_name }}" class="thumbnail" />
+              </a>
+              <p>{{ file.file_name }}</p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div *ngIf="!selectedProject" class="centered-message">
         <p>Select a project to view details and upload files.</p>
