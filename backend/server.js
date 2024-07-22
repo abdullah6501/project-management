@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/uploads', express.static('uploads')); // Serve static files from uploads directory
+app.use('/uploads', express.static('uploads')); 
 
 log4js.configure({
     appenders: { file: { type: 'file', filename: 'logs/app.log' } },
@@ -24,7 +24,7 @@ app.use(log4js.connectLogger(logger, { level: 'auto' }));
 app.post('/text', storeData);
 app.get('/show', getProjects);
 app.post('/upload', upload.single('file'), uploadFile);
-app.get('/files/:projectName', getProjectFiles);
+app.get('/files/:projectName/:category', getProjectFiles);
 
 app.use((err, req, res, next) => {
     logger.error('Internal server error:', err);
