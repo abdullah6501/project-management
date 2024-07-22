@@ -3330,3 +3330,152 @@
 [2024-07-22T11:21:51.412] [WARN] server - ::1 - - "GET /files/Inventory%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-22T11:21:51.414] [WARN] server - ::1 - - "GET /files/Inventory%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-22T11:21:51.417] [WARN] server - ::1 - - "GET /files/Inventory%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:22:31.530] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:22:34.534] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:23:33.876] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:23:37.884] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:25:00.430] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:25:22.198] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:25:33.204] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:00.698] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:04.355] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:06.314] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:15.298] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:21.847] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:24.148] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:29:32.633] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:31:55.281] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:32:35.260] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:32:39.003] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:32:43.888] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:32:48.069] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:37:07.208] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:37:07.210] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:37:07.212] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:38:00.295] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:38:10.282] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:38:57.515] [INFO] control - Data stored successfully
+[2024-07-22T11:38:57.517] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:38:57.646] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 294 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:39:00.347] [INFO] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:39:00.355] [INFO] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:39:00.358] [INFO] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:18.248] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:40:18.248] [INFO] control - Category: docs
+[2024-07-22T11:40:18.248] [INFO] control - File Name: 1721628618233-doc-icon.png
+[2024-07-22T11:40:18.248] [INFO] control - File Path: uploads\1721628618233-doc-icon.png
+[2024-07-22T11:40:18.256] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:40:18.256] [INFO] control - Category: misc
+[2024-07-22T11:40:18.256] [INFO] control - File Name: 1721628618244-1721542919694-1721481513987-techstack.xlsx
+[2024-07-22T11:40:18.256] [INFO] control - File Path: uploads\1721628618244-1721542919694-1721481513987-techstack.xlsx
+[2024-07-22T11:40:18.266] [INFO] control - File uploaded successfully
+[2024-07-22T11:40:18.270] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:18.280] [INFO] control - File uploaded successfully
+[2024-07-22T11:40:18.282] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:18.540] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:40:18.540] [INFO] control - Category: videos
+[2024-07-22T11:40:18.540] [INFO] control - File Name: 1721628618225-SampleVideo_1280x720_5mb.flv
+[2024-07-22T11:40:18.540] [INFO] control - File Path: uploads\1721628618225-SampleVideo_1280x720_5mb.flv
+[2024-07-22T11:40:18.550] [INFO] control - File uploaded successfully
+[2024-07-22T11:40:18.552] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:18.570] [INFO] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 200 126 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:18.572] [INFO] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 200 94 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:18.573] [INFO] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 200 154 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:52.007] [WARN] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:52.011] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:40:52.014] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:41:18.850] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:41:18.850] [INFO] control - Category: videos
+[2024-07-22T11:41:18.850] [INFO] control - File Name: 1721628678756-SampleVideo_1280x720_2mb.flv
+[2024-07-22T11:41:18.850] [INFO] control - File Path: uploads\1721628678756-SampleVideo_1280x720_2mb.flv
+[2024-07-22T11:41:18.868] [INFO] control - File uploaded successfully
+[2024-07-22T11:41:18.869] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:41:18.891] [INFO] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 200 251 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:41:18.895] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:41:18.897] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:42:16.980] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:42:16.980] [INFO] control - Category: videos
+[2024-07-22T11:42:16.980] [INFO] control - File Name: 1721628735729-3209828-uhd_3840_2160_25fps.mp4
+[2024-07-22T11:42:16.980] [INFO] control - File Path: uploads\1721628735729-3209828-uhd_3840_2160_25fps.mp4
+[2024-07-22T11:42:16.994] [INFO] control - File uploaded successfully
+[2024-07-22T11:42:16.996] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:42:17.017] [INFO] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 200 382 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:42:17.019] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:42:17.021] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:45:53.768] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:45:53.768] [INFO] control - Category: videos
+[2024-07-22T11:45:53.769] [INFO] control - File Name: 1721628953144-11.01.2024_13.47.39_REC.mp4
+[2024-07-22T11:45:53.769] [INFO] control - File Path: uploads\1721628953144-11.01.2024_13.47.39_REC.mp4
+[2024-07-22T11:45:53.785] [INFO] control - File uploaded successfully
+[2024-07-22T11:45:53.786] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:45:53.814] [INFO] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 200 505 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:45:53.821] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:45:53.823] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:46:55.308] [INFO] control - Project Name: Test Folder
+[2024-07-22T11:46:55.308] [INFO] control - Category: docs
+[2024-07-22T11:46:55.308] [INFO] control - File Name: 1721629015286-1721542919694-1721481513987-techstack.xlsx
+[2024-07-22T11:46:55.308] [INFO] control - File Path: uploads\1721629015286-1721542919694-1721481513987-techstack.xlsx
+[2024-07-22T11:46:55.335] [INFO] control - File uploaded successfully
+[2024-07-22T11:46:55.337] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:46:55.357] [WARN] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:46:55.361] [INFO] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 200 247 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:46:55.363] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:13.482] [WARN] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:13.485] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:13.495] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:14.935] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:14.937] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:14.939] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:22.017] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:22.019] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:22.027] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:25.565] [WARN] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:25.576] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:48:25.594] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:28.325] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:28.328] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:28.331] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:31.315] [WARN] server - ::1 - - "GET /files/Inventory%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:31.318] [WARN] server - ::1 - - "GET /files/Inventory%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:31.322] [WARN] server - ::1 - - "GET /files/Inventory%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:33.216] [WARN] server - ::1 - - "GET /files/Attendance%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:33.220] [WARN] server - ::1 - - "GET /files/Attendance%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:33.223] [WARN] server - ::1 - - "GET /files/Attendance%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:34.738] [WARN] server - ::1 - - "GET /files/Usecase%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:34.744] [WARN] server - ::1 - - "GET /files/Usecase%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:34.746] [WARN] server - ::1 - - "GET /files/Usecase%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:36.039] [WARN] server - ::1 - - "GET /files/Talent%20Harbour%20Hub/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:36.046] [WARN] server - ::1 - - "GET /files/Talent%20Harbour%20Hub/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:36.049] [WARN] server - ::1 - - "GET /files/Talent%20Harbour%20Hub/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:42.795] [INFO] control - Data stored successfully
+[2024-07-22T11:49:42.797] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:42.936] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 332 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:47.627] [INFO] control - Data stored successfully
+[2024-07-22T11:49:47.630] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:47.746] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 352 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:52.374] [INFO] control - Data stored successfully
+[2024-07-22T11:49:52.375] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:52.492] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 372 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:58.759] [INFO] control - Data stored successfully
+[2024-07-22T11:49:58.761] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:49:58.874] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 392 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:51:46.200] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:51:56.080] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:51:56.083] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:51:56.087] [WARN] server - ::1 - - "GET /files/Helllllloooooooo/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:52:23.232] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:57:16.377] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:57:16.380] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:57:16.382] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:59:02.704] [WARN] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:59:02.707] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T11:59:02.708] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:05:46.866] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:05:46.868] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:05:46.869] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:08:14.158] [WARN] server - ::1 - - "GET /files/Test%20Folder/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:08:14.160] [WARN] server - ::1 - - "GET /files/Test%20Folder/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:08:14.162] [WARN] server - ::1 - - "GET /files/Test%20Folder/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:11:37.320] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:11:37.323] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-07-22T12:11:37.324] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
