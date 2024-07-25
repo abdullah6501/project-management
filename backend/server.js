@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const log4js = require('log4js');
-const { storeData, getProjects, uploadFile, upload, getProjectFiles, softDeleteProject } = require('./controller/control');
+const { storeData, getProjects, uploadFile, upload, getProjectFiles, softDeleteProject, deleteFile } = require('./controller/control');
 const db = require('./dbconfig/db');
 
 const app = express();
@@ -25,7 +25,8 @@ app.post('/text', storeData);
 app.get('/show', getProjects);
 app.post('/upload', upload.single('file'), uploadFile);
 app.get('/files/:projectName/:category', getProjectFiles);
-app.put('/softdelete', softDeleteProject)
+app.put('/softdelete', softDeleteProject);
+app.delete('/deleteFile', deleteFile);
 
 app.use((err, req, res, next) => {
     logger.error('Internal server error:', err);

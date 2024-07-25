@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddlistDialogComponent } from './addlist-dialog/addlist-dialog.component';
 import { VideosComponent } from './videos/videos.component';
 import { ToastrModule } from 'ngx-toastr';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ToastrModule } from 'ngx-toastr';
     AddlistComponent,
     AddlistDialogComponent,
     VideosComponent
+    // MatTooltip
   ],
   imports: [
     BrowserModule,

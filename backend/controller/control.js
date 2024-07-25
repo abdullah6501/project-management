@@ -124,4 +124,33 @@ const softDeleteProject = (req, res, next) => {
   })
 }
 
-module.exports = { storeData, getProjects, uploadFile, upload, getProjectFiles, softDeleteProject };
+const deleteFile = (req, res, next) => {
+  const { projectName, category, fileName } = req.body;
+
+  if (!projectName || !category || !fileName) {
+    logger.error('Project name, category, or file name missing');
+    return res.status(400).json({ error: 'Project name, category, or file name missing' });
+  }
+
+  const filePath = path.join('uploads', fileName);
+
+  fs.unlink(filePath, (err) => {
+    if (err) {
+      logger.error('Error deleting file from filesystem:', err);
+      return res.status(500).json({ error: 'Internal server error' });
+    }
+
+    const sql = 'DELETE FROM projects WHERE project_name = ? AND category = ? AND file_name = ?';
+    connection.query(sql, [projectName, category, fileName], (err, result) => {
+      if (err) {
+        logger.error('Error deleting file from database:', err);
+        return res.status(500).json({ error: 'Internal server error' });
+      }
+
+      logger.info('File deleted successfully');
+      res.status(200).json({ message: 'File deleted successfully' });
+    });
+  });
+};
+
+module.exports = { storeData, getProjects, uploadFile, upload, getProjectFiles, softDeleteProject, deleteFile };

@@ -204,40 +204,12 @@ export class ListComponent implements OnInit {
     });
   }
 
-  deleteFile(file: ProjectFile, category: string): void {
-    if (this.selectedProject) {
-      const projectName = this.selectedProject.projectlist;
-      const url = `${this.apiUrl}/deleteFile`;
-      const body = { filePath: file.file_path, category, projectName };
-  
-      this.http.delete(url, { body }).subscribe({
-        next: () => {
-          console.log('File deleted successfully');
-          this.snackBar.open('File deleted successfully!', 'Close', {
-            duration: 3000,
-            verticalPosition: 'bottom',
-            horizontalPosition: 'right'
-          });
-          this.fetchProjectFiles(projectName); // Refresh file list
-        },
-        error: (error) => {
-          console.error('Error deleting file:', error);
-          this.snackBar.open('Failed to delete file.', 'Close', {
-            duration: 3000,
-            verticalPosition: 'bottom',
-            horizontalPosition: 'right'
-          });
-        }
-      });
-    }
-  }
-  
   confirmDeleteFile(file: ProjectFile): void {
     this.dialogRef = this.dialog.open(this.confirmationDialog, {
       data: file
     });
   }
-  
+
   onConfirmDeleteFile(data: ProjectFile): void {
     if (data.file_path) {
       this.deleteFile(data, data.file_type);
@@ -246,50 +218,43 @@ export class ListComponent implements OnInit {
       this.dialogRef.close();
     }
   }
-  
 
-  // confirmDeleteFile(file: ProjectFile): void {
-  //   this.dialogRef = this.dialog.open(this.confirmationDialog, {
-  //     data: file
-  //   });
-  // }
+  deleteFile(file: ProjectFile, category: string): void {
+    if (this.selectedProject) {
+      const projectName = this.selectedProject.projectlist;
+      const fileName = file.file_name; 
+      const url = `${this.apiUrl}/deleteFile`;
+      const body = { projectName, category, fileName };
 
-  // onConfirmDeleteFile(data: ProjectFile): void {
-  //   if (data.file_path) {
-  //     this.deleteFile(data.file_path, data.file_type);
-  //   }
-  //   if (this.dialogRef) {
-  //     this.dialogRef.close();
-  //   }
-  // }
-
-  // deleteFile(filePath: string, category: string): void {
-  //   if (this.selectedProject) {
-  //     const projectName = this.selectedProject.projectlist;
-  //     const url = `${this.apiUrl}/deleteFile`;
-  //     const body = { filePath, category, projectName };
-
-  //     this.http.delete(url, { body }).subscribe({
-  //       next: () => {
-  //         console.log('File deleted successfully');
-  //         this.snackBar.open('File deleted successfully!', 'Close', {
-  //           duration: 3000,
-  //           verticalPosition: 'bottom',
-  //           horizontalPosition: 'right'
-  //         });
-  //         this.fetchProjectFiles(projectName); // Refresh file list
-  //       },
-  //       error: (error) => {
-  //         console.error('Error deleting file:', error);
-  //         this.snackBar.open('Failed to delete file.', 'Close', {
-  //           duration: 3000,
-  //           verticalPosition: 'bottom',
-  //           horizontalPosition: 'right'
-  //         });
-  //       }
-  //     });
-  //   }
-  // }
+      this.http.delete(url, { body }).subscribe({
+        next: () => {
+          console.log('File deleted successfully');
+          this.snackBar.open('File deleted successfully!', 'Close', {
+            duration: 3000,
+            verticalPosition: 'bottom',
+            horizontalPosition: 'right'
+          });
+          this.fetchProjectFiles(projectName); 
+        },
+        error: (error) => {
+          console.error('Error deleting file:', error);
+          if (error.status === 400 && error.error && error.error.error) {
+            this.snackBar.open(`Failed to delete file: ${error.error.error}`, 'Close', {
+              duration: 3000,
+              verticalPosition: 'bottom',
+              horizontalPosition: 'right'
+            });
+          } else {
+            this.snackBar.open('Failed to delete file.', 'Close', {
+              duration: 3000,
+              verticalPosition: 'bottom',
+              horizontalPosition: 'right'
+            });
+          }
+        }
+      });
+    }
+  }
 
   // getFileIcon(fileType: string): string {
   //   switch (fileType) {
