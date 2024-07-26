@@ -4,7 +4,7 @@
   </div>
   <div class="content">
     <div class="left-panel">
-      <h2 class="h2">Projects</h2>
+      <h1 class="h2">Projects</h1>
       <div class="plusminus">
         <button class="plus" (click)="openAddlistDialog()">
           <mat-icon class="add">add</mat-icon>
@@ -13,6 +13,7 @@
           <mat-icon class="remove">remove</mat-icon>
         </button>
       </div>
+      <mat-divider class="divider"></mat-divider>
       <mat-list>
         <mat-list-item class="prolist" *ngFor="let project of projects">
           <button mat-button (click)="handleProjectClick(project)">
@@ -32,7 +33,7 @@
     <div class="right-panel">
       <div *ngIf="selectedProject">
         <div class="fixed-header">
-          <h1 class="pro-head">{{ selectedProject.projectlist }}</h1>
+          <span class="pro-head">{{ selectedProject.projectlist }}</span>
           <button
             mat-icon-button
             color="warn"
@@ -173,7 +174,8 @@
 <ng-template #confirmationDialog let-data>
   <h1 mat-dialog-title>Confirm Deletion</h1>
   <div mat-dialog-content>
-    Are you sure you want to delete {{ data.file_name }}?
+    Are you sure you want to delete {{ data.file_name }}? <br />
+    <p>Once deleted, It can't be recovered</p>
   </div>
   <div mat-dialog-actions>
     <button mat-button (click)="onCancelDelete()">Cancel</button>

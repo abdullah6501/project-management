@@ -194,9 +194,11 @@
 
 .h2 {
   color: #3f69d3;
-  font-size: 30px;
+  font-size: 36px;
   padding-left: 23px;
   padding-top: 10px;
+  position: relative;
+  top: 5px;
 }
 
 .h3 {
@@ -248,13 +250,14 @@
   font-size: 30px;
   position: relative;
   top: 10px;
+  /* max-width: 300px; */
 }
 
 .plus {
   background-color: #5aaf5a;
   color: white;
-  height: 26px;
-  width: 26px;
+  height: 24px;
+  width: 25px;
   border-radius: 50%;
   position: relative;
   right: 20px;
@@ -264,6 +267,7 @@
 .add {
   position: relative;
   right: 7px;
+  bottom: 1px;
 }
 
 .minus {
@@ -282,9 +286,14 @@
 
 .plusminus {
   position: relative;
-  bottom: 47px;
-  left: 200px;
+  bottom: 39px;
+  left: 213px;
   width: 65px;
+}
+
+.divider{
+  position: relative;
+  bottom: 40px;
 }
 
 .input-vid {
@@ -325,8 +334,8 @@
 }
 
 .hard-delete {
-  position: relative;
-  left: 350px;
+  position: absolute;
+  right: 60px;
 }
 
 @media (min-width: 1025px) {
