@@ -3,6 +3,7 @@ const log4js = require('log4js');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
+const { error } = require('console');
 
 const logger = log4js.getLogger('control');
 
@@ -15,7 +16,7 @@ const storage = multer.diskStorage({
     cb(null, dir);
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + '-' + file.originalname);
+    cb(null, file.originalname);
   }
 });
 
@@ -37,7 +38,7 @@ const storeData = (req, res, next) => {
 };
 
 const getProjects = (req, res, next) => {
-  const sql = 'SELECT projectlist FROM projectlist';
+  const sql = 'SELECT projectlist FROM projectlist WHERE is_deleted = 0';
   connection.query(sql, (err, results) => {
     if (err) {
       logger.error('Error fetching projects:', err);
@@ -52,7 +53,7 @@ const getProjects = (req, res, next) => {
 const uploadFile = (req, res, next) => {
   try {
     const projectName = req.body.projectName;
-    const category = req.body.category; 
+    const category = req.body.category;
     const file = req.file;
 
     if (!projectName || !category || !file) {
@@ -103,5 +104,53 @@ const getProjectFiles = (req, res, next) => {
   });
 };
 
+const softDeleteProject = (req, res, next) => {
+  const { projectName } = req.body;
 
-module.exports = { storeData, getProjects, uploadFile, upload, getProjectFiles };
+  if (!projectName) {
+    logger.error('project name missing');
+    return res.status(400).json({ error: 'project name missing' });
+  }
+
+  const query = 'UPDATE projectlist SET is_deleted = 1 WHERE projectlist = ?';
+
+  connection.query(query, [projectName], (err, result) => {
+    if (err) {
+      logger.error('Error soft-deleting project:', err);
+      return res.status(500).json({ error: 'Internal server error' });
+    }
+    logger.info('Project soft-delete successfully');
+    res.status(200).json({ message: 'Project soft-delete successfully' });
+  })
+}
+
+const deleteFile = (req, res, next) => {
+  const { projectName, category, fileName } = req.body;
+
+  if (!projectName || !category || !fileName) {
+    logger.error('Project name, category, or file name missing');
+    return res.status(400).json({ error: 'Project name, category, or file name missing' });
+  }
+
+  const filePath = path.join('uploads', fileName);
+
+  fs.unlink(filePath, (err) => {
+    if (err) {
+      logger.error('Error deleting file from filesystem:', err);
+      return res.status(500).json({ error: 'Internal server error' });
+    }
+
+    const sql = 'DELETE FROM projects WHERE project_name = ? AND category = ? AND file_name = ?';
+    connection.query(sql, [projectName, category, fileName], (err, result) => {
+      if (err) {
+        logger.error('Error deleting file from database:', err);
+        return res.status(500).json({ error: 'Internal server error' });
+      }
+
+      logger.info('File deleted successfully');
+      res.status(200).json({ message: 'File deleted successfully' });
+    });
+  });
+};
+
+module.exports = { storeData, getProjects, uploadFile, upload, getProjectFiles, softDeleteProject, deleteFile };

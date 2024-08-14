@@ -12,8 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddlistDialogComponent } from './addlist-dialog/addlist-dialog.component';
 import { VideosComponent } from './videos/videos.component';
 import { ToastrModule } from 'ngx-toastr';
+<<<<<<< HEAD
 import { AuthModule } from '@auth0/auth0-angular';
 import { createCustomElement } from '@angular/elements';
+=======
+import { MatTooltip } from '@angular/material/tooltip';
+>>>>>>> 1ae0dc9004a8abd535a9475fc74f134113bcbb38
 
 @NgModule({
   declarations: [
@@ -22,6 +26,7 @@ import { createCustomElement } from '@angular/elements';
     AddlistComponent,
     AddlistDialogComponent,
     VideosComponent
+    // MatTooltip
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+
+-------------------------------------------
+
+USE traineetaskmanager;
+
+CREATE TABLE project_info_seq (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT
+);
+
+CREATE TABLE project_info (
+    Projectid VARCHAR(7) NOT NULL PRIMARY KEY,
+    Title VARCHAR(255),
+    Email VARCHAR(300),
+    Description VARCHAR(500),
+    Team VARCHAR(500),
+    Startdate DATE,
+    Deadline DATE,
+    Tools VARCHAR(300),
+    Files BLOB
+);
+
+DELIMITER $$
+
+CREATE TRIGGER TG_PROJECT_INFO_INSERT
+BEFORE INSERT ON project_info
+FOR EACH ROW
+BEGIN
+    INSERT INTO project_info_seq VALUES (NULL);
+    SET NEW.Projectid = CONCAT('PROJ', LPAD(LAST_INSERT_ID(), 3, '100'));
+END;
+$$
+
+DELIMITER ;
+
