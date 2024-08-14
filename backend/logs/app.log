@@ -3479,3 +3479,5 @@
 [2024-07-22T12:11:37.320] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-22T12:11:37.323] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-22T12:11:37.324] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+[2024-08-08T16:31:14.965] [INFO] server - Server running on http://localhost:3001
+[2024-08-08T16:31:15.089] [INFO] db - Connected to MySQL database

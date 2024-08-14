@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddlistDialogComponent } from './addlist-dialog/addlist-dialog.component';
 import { VideosComponent } from './videos/videos.component';
 import { ToastrModule } from 'ngx-toastr';
+import { AuthModule } from '@auth0/auth0-angular';
+import { createCustomElement } from '@angular/elements';
 
 @NgModule({
   declarations: [
@@ -31,9 +33,22 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
       timeOut: 3000
-    })
+    }),
+    // AuthModule.forRoot({
+    //   domain: 'YOUR_AUTH0_DOMAIN',
+    //   clientId: 'YOUR_AUTH0_CLIENT_ID',
+    //   redirectUri: window.location.origin
+    // }),
   ],
   providers: [],
+  // entryComponents: [ListComponent], 
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private injector: Injector) {
+    const el = createCustomElement(ListComponent, { injector });
+    customElements.define('list', el);  // Define custom element
+  }
+
+  ngDoBootstrap() {}  // Manually bootstrap the app
+}
