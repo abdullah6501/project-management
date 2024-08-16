@@ -5922,3 +5922,523 @@
 [2024-07-26T12:54:56.695] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 [2024-07-26T12:54:56.697] [WARN] server - ::1 - - "GET /files/Portfolio%20Management/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 >>>>>>> 1ae0dc9004a8abd535a9475fc74f134113bcbb38
+[2024-08-14T18:30:46.970] [INFO] server - Server running on http://localhost:3001
+[2024-08-14T18:30:47.089] [INFO] db - Connected to MySQL database
+[2024-08-14T18:30:58.050] [ERROR] control - Error fetching projects: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-14T18:30:58.056] [ERROR] server - Internal server error: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-14T18:30:58.075] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:31:08.358] [INFO] control - Data stored successfully
+[2024-08-14T18:31:08.359] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:31:08.462] [ERROR] control - Error fetching projects: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-14T18:31:08.465] [ERROR] server - Internal server error: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-14T18:31:08.469] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:31:11.754] [ERROR] control - Error fetching projects: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-14T18:31:11.756] [ERROR] server - Internal server error: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-14T18:31:11.759] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:32:57.688] [INFO] server - Server running on http://localhost:3001
+[2024-08-14T18:32:57.723] [INFO] db - Connected to MySQL database
+[2024-08-14T18:33:02.226] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:14.821] [INFO] control - Data stored successfully
+[2024-08-14T18:33:14.823] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:14.929] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 23 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:20.618] [INFO] control - Project soft-delete successfully
+[2024-08-14T18:33:20.620] [INFO] server - ::1 - - "PUT /softdelete HTTP/1.1" 200 46 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:28.477] [INFO] control - Data stored successfully
+[2024-08-14T18:33:28.479] [INFO] server - ::1 - - "POST /text HTTP/1.1" 200 38 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:28.576] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 23 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:30.425] [INFO] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:30.429] [INFO] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:30.433] [INFO] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:48.267] [INFO] control - Project Name: aab
+[2024-08-14T18:33:48.268] [INFO] control - Category: docs
+[2024-08-14T18:33:48.268] [INFO] control - File Name: Abdullah_demo_ppt.pptx
+[2024-08-14T18:33:48.268] [INFO] control - File Path: uploads\Abdullah_demo_ppt.pptx
+[2024-08-14T18:33:48.287] [INFO] control - File uploaded successfully
+[2024-08-14T18:33:48.290] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:48.314] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:48.317] [INFO] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 200 86 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-14T18:33:48.320] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:53:29.784] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T10:53:29.898] [INFO] db - Connected to MySQL database
+[2024-08-16T10:56:22.234] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:56:26.551] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:56:26.555] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:56:26.558] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:56:52.833] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:58:22.623] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:58:30.053] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:58:30.063] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:58:30.107] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:59:00.541] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T10:59:37.323] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:00:24.729] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:00:33.584] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:01:07.216] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:02:14.791] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:02:14.793] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:02:14.795] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:02:56.903] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:02:59.121] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:03:01.260] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:03:01.265] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:03:01.269] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:28:37.491] [INFO] control - Project Name: aab
+[2024-08-16T11:28:37.493] [INFO] control - Category: misc
+[2024-08-16T11:28:37.493] [INFO] control - File Name: bg1.avif
+[2024-08-16T11:28:37.495] [INFO] control - File Path: uploads\bg1.avif
+[2024-08-16T11:28:37.948] [INFO] control - File uploaded successfully
+[2024-08-16T11:28:38.000] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:28:39.857] [INFO] control - Project Name: aab
+[2024-08-16T11:28:39.858] [INFO] control - Category: videos
+[2024-08-16T11:28:39.858] [INFO] control - File Name: 11.01.2024_13.47.39_REC.mp4
+[2024-08-16T11:28:39.858] [INFO] control - File Path: uploads\11.01.2024_13.47.39_REC.mp4
+[2024-08-16T11:28:39.886] [INFO] control - File uploaded successfully
+[2024-08-16T11:28:39.889] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:28:39.945] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:28:39.948] [INFO] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 200 96 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:28:39.951] [INFO] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 200 58 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:20.416] [INFO] control - Project Name: aab
+[2024-08-16T11:29:20.416] [INFO] control - Category: misc
+[2024-08-16T11:29:20.416] [INFO] control - File Name: file_icon.png
+[2024-08-16T11:29:20.416] [INFO] control - File Path: uploads\file_icon.png
+[2024-08-16T11:29:20.433] [INFO] control - File uploaded successfully
+[2024-08-16T11:29:20.435] [INFO] server - ::1 - - "POST /upload HTTP/1.1" 200 40 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:20.505] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:20.516] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:20.526] [INFO] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 200 125 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:23.767] [ERROR] server - ::1 - - "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3001/uploads/file_icon.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:32.223] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:32.226] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T11:29:32.228] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:21:01.610] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:21:01.963] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:23:21.610] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:23:24.349] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:23:24.356] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:23:24.367] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:23:48.726] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:23:48.838] [INFO] db - Connected to MySQL database
+[2024-08-16T12:23:54.209] [ERROR] control - Error fetching projects: Error: ER_NO_SUCH_TABLE: Table 'invent.projectlist' doesn't exist
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: "Table 'invent.projectlist' doesn't exist",
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:23:54.213] [ERROR] server - Internal server error: Error: ER_NO_SUCH_TABLE: Table 'invent.projectlist' doesn't exist
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: "Table 'invent.projectlist' doesn't exist",
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:23:54.224] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:25:34.240] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:25:34.278] [INFO] db - Connected to MySQL database
+[2024-08-16T12:25:39.442] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:25:39.479] [INFO] db - Connected to MySQL database
+[2024-08-16T12:25:44.530] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:25:44.609] [INFO] db - Connected to MySQL database
+[2024-08-16T12:25:47.463] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:25:47.498] [INFO] db - Connected to MySQL database
+[2024-08-16T12:25:53.070] [ERROR] control - Error fetching projects: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:25:53.074] [ERROR] server - Internal server error: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:25:53.085] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:26:05.611] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:26:05.651] [INFO] db - Connected to MySQL database
+[2024-08-16T12:26:13.078] [ERROR] control - Error fetching projects: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:26:13.082] [ERROR] server - Internal server error: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:26:13.094] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:27:09.030] [ERROR] control - Error fetching projects: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:27:09.031] [ERROR] server - Internal server error: Error: ER_BAD_FIELD_ERROR: Unknown column 'is_deleted' in 'where clause'
+    at Sequence._packetToError (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\HP\Desktop\pro-port\backend\node_modules\mysql\lib\Connection.js:198:25)
+    at getProjects (C:\Users\HP\Desktop\pro-port\backend\controller\control.js:42:14)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\HP\Desktop\pro-port\backend\node_modules\express\lib\router\index.js:280:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'is_deleted' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT projectlist FROM projectlist WHERE is_deleted = 0'
+}
+[2024-08-16T12:27:09.036] [ERROR] server - ::1 - - "GET /show HTTP/1.1" 500 33 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:27:17.361] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:27:17.393] [INFO] db - Connected to MySQL database
+[2024-08-16T12:27:18.639] [INFO] server - Server running on http://localhost:3001
+[2024-08-16T12:27:18.669] [INFO] db - Connected to MySQL database
+[2024-08-16T12:27:23.112] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 2 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:27:29.471] [WARN] server - ::1 - - "GET /show HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:28:03.621] [INFO] server - ::1 - - "GET /show HTTP/1.1" 200 45 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:28:05.741] [WARN] server - ::1 - - "GET /files/aab/videos HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:28:05.744] [WARN] server - ::1 - - "GET /files/aab/docs HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+[2024-08-16T12:28:05.749] [WARN] server - ::1 - - "GET /files/aab/misc HTTP/1.1" 304 - "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"

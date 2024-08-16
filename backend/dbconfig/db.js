@@ -7,7 +7,8 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root@123',
-  database: 'proport'
+  database: 'pulsedb'
+  // database: 'proport'
 });
 
 connection.connect((err) => {

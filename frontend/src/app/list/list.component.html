@@ -6,10 +6,15 @@
     <div class="left-panel">
       <h1 class="h2">Projects</h1>
       <div class="plusminus">
-        <button class="plus" (click)="openAddlistDialog()">
+        <button class="plus" (click)="openAddlistDialog()" matTooltip="Add">
           <mat-icon class="add">add</mat-icon>
         </button>
-        <button mat-icon-button class="minus" (click)="toggleDeleteMode()">
+        <button
+          mat-icon-button
+          class="minus"
+          (click)="toggleDeleteMode()"
+          matTooltip="remove"
+        >
           <mat-icon class="remove">remove</mat-icon>
         </button>
       </div>
@@ -24,6 +29,7 @@
             *ngIf="deleteMode"
             class="delete"
             (click)="openDeleteDialog(project)"
+            matTooltip="Delete Project"
           >
             <mat-icon>delete</mat-icon>
           </button>
@@ -39,6 +45,7 @@
             color="warn"
             class="hard-delete"
             (click)="toggleFileDeleteMode()"
+            matTooltip="Delete File"
           >
             <mat-icon>delete</mat-icon>
           </button>
@@ -74,6 +81,7 @@
               mat-icon-button
               color="primary"
               (click)="onUploadAll()"
+              matTooltip="Upload File"
             >
               <mat-icon>cloud_upload</mat-icon>
             </button>
@@ -83,12 +91,19 @@
           <div class="file-list-section">
             <h3 class="h3-vidlist">Video List</h3>
             <div class="file-item" *ngFor="let file of projectFiles.videos">
-              <video
+              <a [href]="file.file_url" target="_blank">
+                <video
+                  [src]="file.file_url"
+                  class="video-thumbnail"
+                  controls
+                ></video>
+              </a>
+              <!-- <video
                 [src]="file.file_url"
                 class="video-thumbnail"
                 controls
-              ></video
-              ><br />
+              ></video> -->
+              <br />
               <p class="file-name" matTooltip="{{ file.file_name }}">
                 <span>{{ file.file_name | slice : 0 : 10 }}...</span>
               </p>
@@ -97,6 +112,7 @@
                 *ngIf="fileDeleteMode"
                 (click)="confirmDeleteFile(file)"
                 class="delete-button"
+                matTooltip="Delete File"
               >
                 <mat-icon>close</mat-icon>
               </button>
@@ -105,13 +121,25 @@
           <div class="file-list-section">
             <h3 class="h3-doclist">Document List</h3>
             <div class="file-item" *ngFor="let file of projectFiles.docs">
-              <a [href]="file.file_url" download="{{ file.file_name }}">
+              <a
+                [href]="file.file_url"
+                target="_blank"
+                download="{{ file.file_name }}"
+              >
+                <img
+                  src="assets/doc-icon.png"
+                  alt="{{ file.file_name }}"
+                  class="thumbnail"
+                />
+              </a>
+              <br />
+              <!-- <a [href]="file.file_url" download="{{ file.file_name }}">
                 <img
                   src="assets/doc-icon.png"
                   alt="{{ file.file_name }}"
                   class="thumbnail"
                 /> </a
-              ><br />
+              ><br /> -->
               <p class="file-name" matTooltip="{{ file.file_name }}">
                 <span>{{ file.file_name | slice : 0 : 10 }}...</span>
               </p>
@@ -120,6 +148,7 @@
                 *ngIf="fileDeleteMode"
                 (click)="confirmDeleteFile(file)"
                 class="delete-button"
+                matTooltip="Delete File"
               >
                 <mat-icon>close</mat-icon>
               </button>
@@ -128,13 +157,25 @@
           <div class="file-list-section">
             <h3 class="h3-otherfile">Other Files</h3>
             <div class="file-item" *ngFor="let file of projectFiles.misc">
-              <a [href]="file.file_url" download="{{ file.file_name }}">
+              <a
+                [href]="file.file_url"
+                target="_blank"
+                download="{{ file.file_name }}"
+              >
+                <img
+                  src="assets/file-icon.png"
+                  alt="{{ file.file_name }}"
+                  class="thumbnail"
+                />
+              </a>
+              <br />
+              <!-- <a [href]="file.file_url" download="{{ file.file_name }}">
                 <img
                   src="assets/file-icon.png"
                   alt="{{ file.file_name }}"
                   class="thumbnail"
                 /> </a
-              ><br />
+              ><br /> -->
               <p class="file-name" matTooltip="{{ file.file_name }}">
                 <span>{{ file.file_name | slice : 0 : 10 }}...</span>
               </p>
